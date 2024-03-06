@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.image-container {
+  background-image: url("./leaves-background.jpg");
+  height: 100vh;
+  width: 30%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#odin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 22.5rem;
+  margin-top: 11.25rem;
+
+  & img {
+    height: 6.25rem;
+    width: auto;
+  }
+}
+
+.odin-text {
+  font-family: norse-bold;
+  color: white;
+  font-size: 80px;
+}
+
+.credit {
+  color: white;
+
+  & a {
+    color: rgb(219, 215, 215);
+  }
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url("./Norse-Bold.otf");
+}
