@@ -12,7 +12,7 @@
   <div id="container">
     <div class="image-container">
       <div id="odin-container">
-        <img src="./odin-lined.png" alt="Odin Project">
+        <img src="./images/odin-lined.png" alt="Odin Project">
         <div class="odin-text">ODIN</div>
       </div>
       <div class="credit">Photo by<a href="https://unsplash.com/@roanlavery"> Roan Lavery</a> on <a
@@ -32,31 +32,32 @@
 
       <div class="form-content">
         <div class="form-text">Let's do this!</div>
-        <form action="#" class="form">
+        <form action="#" id="login-form">
           <div class="row">
             <div class="left-column">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
           </div>
 
           <div class="row">
             <div class="left-column">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" required>
             </div>
           </div>
         </form>
       </div>
 
       <div class="signup-container">
-        <button type="submit" form="form" class="createbtn">Sign in</button>
-        <div class="login">New user? <a href="./index.html" class="login-link">Sign up</a>
+        <button type="submit" form="login-form" class="btn">Sign in</button>
+        <div class="login">New user? <a href="./index.html" class="sign-up-link">Sign up</a>
         </div>
       </div>
     </div>
   </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>

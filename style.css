@@ -1,5 +1,9 @@
 body {
+  display: flex;
+  padding: 0;
   margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 #container {
@@ -7,8 +11,7 @@ body {
 }
 
 .image-container {
-  background-image: url("./leaves-background.jpg");
-  height: 100vh;
+  background-image: url("./images/leaves-background.jpg");
   width: clamp(300px, 30%, 500px);
   background-size: cover;
   display: flex;
@@ -96,7 +99,8 @@ body {
   font-size: 25px;
 }
 
-.form {
+#signup-form,
+#login-form {
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: uppercase;
@@ -125,6 +129,7 @@ input {
   padding: 6px;
   font-size: 18px;
   width: 300px;
+  letter-spacing: 1px;
 }
 
 label {
@@ -139,7 +144,7 @@ input:focus {
   padding: 30px 80px 20px;
 }
 
-.createbtn {
+.btn {
   padding: 10px 40px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -150,8 +155,54 @@ input:focus {
   font-weight: 600;
 }
 
-.login-link {
+.btn:hover {
+  background-color: #5a9923;
+  box-shadow: 0 3px 5px rgb(126, 126, 126);
+}
+
+.login-link,
+.sign-up-link {
   text-decoration: none;
   color: #477a1a;
   font-weight: 600;
+
+  &:hover {
+    color: #2d550b;
+    text-decoration: underline;
+  }
+}
+
+#password-message {
+  background-color: lightgray;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0 80px 0;
+}
+
+#password-message {
+  display: none;
+
+  & p {
+    padding: 0px 35px;
+    font-size: 16px;
+  }
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }
