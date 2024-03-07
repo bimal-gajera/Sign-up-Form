@@ -8,11 +8,12 @@ body {
 
 #container {
   display: flex;
+  flex-grow: 1;
 }
 
 .image-container {
   background-image: url("./images/leaves-background.jpg");
-  width: clamp(300px, 30%, 500px);
+  width: clamp(300px, 30%, 700px);
   background-size: cover;
   display: flex;
   flex-shrink: 0;
